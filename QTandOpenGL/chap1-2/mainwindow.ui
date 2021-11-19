@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Demo</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>D:/Desktop/cube.png</normaloff>D:/Desktop/cube.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+background-color:rgb(68,68,68);
+color:rgb(255,255,255);
+font:10pt &quot;幼圆&quot;;
+}
+QMenuBar
+{
+background-color:rgb(200,200,200);
+color:rgb(60,60,60);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="AXBOpenGLWidget" name="openGLWidget">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>130</y>
+      <width>601</width>
+      <height>301</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuA">
+    <property name="title">
+     <string>A</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuB">
+    <property name="title">
+     <string>B</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuC">
+    <property name="title">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuD">
+    <property name="title">
+     <string>D</string>
+    </property>
+   </widget>
+   <addaction name="menuA"/>
+   <addaction name="menuB"/>
+   <addaction name="menuC"/>
+   <addaction name="menuD"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actiondraw">
+   <property name="text">
+    <string>drawA</string>
+   </property>
+  </action>
+  <action name="actionclear">
+   <property name="text">
+    <string>clear</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AXBOpenGLWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">axbopenglwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
